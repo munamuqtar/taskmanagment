@@ -23,7 +23,7 @@ data class SettingsUiState(
     val errorMessage: String? = null
 )
 
-class SettingsViewModel(
+class SettingsViewModel @JvmOverloads constructor(
     application: Application,
     private val settingsRepository: SettingsRepository = SettingsRepositoryImpl(),
     private val profileRepository: ProfileRepository = ProfileRepositoryImpl(),
